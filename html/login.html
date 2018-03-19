@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Page</title>
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <!-- PNotify -->
+    <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- PNotify -->
+    <script src="../vendors/pnotify/dist/pnotify.js"></script>
+    <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+    <!-- My Login js -->
+    <script src="js/login.js"></script>
+  </head>
+
+  <body class="login">
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form id="login_form" method="post" >
+              <h1>Login Form</h1>
+              <div>
+                <input id="signin_username" type="text" name="username" class="form-control" placeholder="Username" required="" />
+              </div>
+              <div>
+                <input id="signin_password" type="password" name="password" class="form-control " placeholder="Password" required="" />
+              </div>
+              <div> 
+                <button type="submit" class="btn btn-default submit">Sign in</button> <br>
+              </div>
+              <div class="clearfix"></div>
+              <div class="separator">
+                <p class="change_link">No account yet ?
+                  <a href="#signup" class="to_register"> Sign up here </a>
+                </p>
+                <div class="clearfix"></div> <br>
+                <div>
+                  <h1><i class="fa fa-bank (alias)"></i> Slot E-Banking</h1>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div id="register" class="animate form registration_form">
+          <section class="login_content">
+            <form id="signup_form" method="post">
+              <h1>Sign up form</h1>
+              <div>
+                <input id="signup_username" type="text" class="form-control" placeholder="Username" required="" />
+              </div>
+              <div>
+                <input id="signup_password" type="password" class="form-control" placeholder="Password" required="" />
+              </div>
+              <div>
+                <input id="signup_accountNo" type="text" class="form-control" placeholder="Account No." required="" />
+              </div>
+              <div>
+                <input id="signup_atmNo" type="text" class="form-control" placeholder="ATM No. (16)" required="" />
+              </div>
+              <div>
+                <input id="signup_atmPassword" type="password" class="form-control"  placeholder="ATM Password (4)" required="" />
+              </div>
+              <div>
+                <input id="signup_firstName" type="text" class="form-control" placeholder="First name" required="" />
+              </div>
+              <div>
+                <input id="signup_lastName" type="text" class="form-control" placeholder="Last name" required="" />
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" value="client" checked="" name="position"> Position : Client
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" value="company" name="position"> Position : Company
+                </label>
+              </div>
+              <div> <br>
+                <input id="signup_companyName" type="text" class="form-control" placeholder="Company name (Only for company)" />
+              </div>
+              <div>
+                <input id="signup_identificationNo" type="text" class="form-control" placeholder="identification No. (13)" required="" />
+              </div>
+              <div>
+                <input id="signup_birthDate" type="date" class="form-control" placeholder="Birth date" required="" /> <br>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-default submit">Sign up</button> <br>
+              </div>
+              <div class="clearfix"></div>
+              <div class="separator">
+                <p class="change_link">Already has an account ?
+                  <a href="#signin" class="to_register"> Sign in here </a>
+                </p>
+                <div class="clearfix"></div> <br>
+                <div>
+                  <h1><i class="fa fa-bank (alias)"></i> Slot E-Banking</h1>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
